@@ -12,7 +12,13 @@
         <meta name="author" content="Sana Team">
       
       
+        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sana_cosmos_rl/">
       
+      
+        <link rel="prev" href="../sana_lora_dreambooth/">
+      
+      
+        <link rel="next" href="../ComfyUI/comfyui/">
       
       
         
@@ -23,14 +29,14 @@
     
     
       
-        <title>Sana Documentation</title>
+        <title>Cosmos-RL - Sana Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/Sana/docs/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/Sana/docs/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,11 +55,11 @@
       
     
     
-      <link rel="stylesheet" href="/Sana/docs/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="/Sana/docs/stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/Sana/docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,6 +83,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +100,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/Sana/docs/." title="Sana Documentation" class="md-header__button md-logo" aria-label="Sana Documentation" data-md-component="logo">
+    <a href=".." title="Sana Documentation" class="md-header__button md-logo" aria-label="Sana Documentation" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/main/asset/logo.png" alt="logo">
 
@@ -108,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Cosmos-RL
             
           </span>
         </div>
@@ -226,7 +237,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/Sana/docs/." title="Sana Documentation" class="md-nav__button md-logo" aria-label="Sana Documentation" data-md-component="logo">
+    <a href=".." title="Sana Documentation" class="md-nav__button md-logo" aria-label="Sana Documentation" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/main/asset/logo.png" alt="logo">
 
@@ -255,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -342,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -370,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/model_zoo/" class="md-nav__link">
+      <a href="../model_zoo/" class="md-nav__link">
         
   
   
@@ -471,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana/" class="md-nav__link">
+      <a href="../sana/" class="md-nav__link">
         
   
   
@@ -499,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana_sprint/" class="md-nav__link">
+      <a href="../sana_sprint/" class="md-nav__link">
         
   
   
@@ -527,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/4bit_sana/" class="md-nav__link">
+      <a href="../4bit_sana/" class="md-nav__link">
         
   
   
@@ -555,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/8bit_sana/" class="md-nav__link">
+      <a href="../8bit_sana/" class="md-nav__link">
         
   
   
@@ -583,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/inference_scaling/inference_scaling/" class="md-nav__link">
+      <a href="../inference_scaling/inference_scaling/" class="md-nav__link">
         
   
   
@@ -680,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana_video/" class="md-nav__link">
+      <a href="../sana_video/" class="md-nav__link">
         
   
   
@@ -708,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana_video_inference/" class="md-nav__link">
+      <a href="../sana_video_inference/" class="md-nav__link">
         
   
   
@@ -736,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/longsana/" class="md-nav__link">
+      <a href="../longsana/" class="md-nav__link">
         
   
   
@@ -768,8 +779,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -788,13 +801,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -815,7 +826,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -833,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana_controlnet/" class="md-nav__link">
+      <a href="../sana_controlnet/" class="md-nav__link">
         
   
   
@@ -861,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sana_lora_dreambooth/" class="md-nav__link">
+      <a href="../sana_lora_dreambooth/" class="md-nav__link">
         
   
   
@@ -886,10 +897,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Sana/docs/sana_cosmos_rl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cosmos-RL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -905,6 +943,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-algorithms-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Algorithms &amp; Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -984,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/ComfyUI/comfyui/" class="md-nav__link">
+      <a href="../ComfyUI/comfyui/" class="md-nav__link">
         
   
   
@@ -1012,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/sglang/" class="md-nav__link">
+      <a href="../sglang/" class="md-nav__link">
         
   
   
@@ -1105,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Sana/docs/metrics_toolkit/" class="md-nav__link">
+      <a href="../metrics_toolkit/" class="md-nav__link">
         
   
   
@@ -1150,6 +1263,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-algorithms-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Algorithms &amp; Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1162,8 +1340,71 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<p align="center" style="border-radius: 10px">
+  <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/page/docs/sana_cosmos_rl/sana-cosmos-rl-logo.png" width="90%" alt="SANA × Cosmos-RL Logo"/>
+</p>
+
+<h1 id="sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models">SANA &times; Cosmos-RL: Post-Training (SFT/RL) for Image &amp; Video Diffusion Models<a class="headerlink" href="#sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models" title="Permanent link">&para;</a></h1>
+<div align="center">
+  <a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/examples/sana.md"><img src="https://img.shields.io/static/v1?label=SANA&message=Cosmos-RL%20README&color=blue&logo=github" alt="SANA on Cosmos-RL"></a>
+  &nbsp; <a href="https://github.com/nvidia-cosmos/cosmos-rl"><img src="https://img.shields.io/static/v1?label=Cosmos-RL&message=Github&color=black&logo=github" alt="Cosmos-RL"></a>
+</div>
+
+<p>We have partnered with <a href="https://github.com/nvidia-cosmos/cosmos-rl">Cosmos-RL</a> to provide a complete RL infrastructure for SANA. This document summarizes how to post-train (SFT/RL) SANA-Image or SANA-Video on Cosmos-RL.</p>
+<p align="center" style="border-radius: 10px">
+  <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/page/docs/sana_cosmos_rl/teaser.png" width="90%" alt="SANA × Cosmos-RL Teaser"/>
+</p>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><strong>SANA</strong> is an efficiency-oriented codebase for high-resolution image and video generation. <strong>Cosmos-RL</strong> is NVIDIA's flexible and scalable reinforcement learning framework. Together they support:</p>
+<ul>
+<li><strong>SFT</strong> (Supervised Fine-Tuning): full and LoRA for image and video</li>
+<li><strong>RL</strong> (e.g. DiffusionNFT &amp; Flow-GRPO): image and video with async reward service and configurable datasets</li>
+</ul>
+<h2 id="supported-algorithms-features">Supported Algorithms &amp; Features<a class="headerlink" href="#supported-algorithms-features" title="Permanent link">&para;</a></h2>
+<p>Cosmos-RL supports state-of-the-art algorithms including <strong>GRPO</strong>, <strong>DAPO</strong> for LLMs, and for diffusion/world models <strong>FlowGRPO</strong>, <strong>DDRL</strong>, and <strong>DiffusionNFT</strong>. SANA is natively supported. For full details see the <a href="https://nvidia-cosmos.github.io/cosmos-rl/">Cosmos-RL documentation</a> and the <a href="https://nvidia-cosmos.github.io/cosmos-rl/wfm/overview.html">post-training of diffusion models</a> overview.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p><strong>Configs</strong>: SANA configs live in <a href="https://github.com/nvidia-cosmos/cosmos-rl/tree/main/configs/sana"><code>configs/sana</code></a>. Presets include:</p>
+<ul>
+<li><strong>SFT</strong> — Image: <code>sana-image-sft</code>, <code>sana-image-sft-lora</code>; Video: <code>sana-video-sft</code>, <code>sana-video-sft-lora</code></li>
+<li><strong>RL</strong> — Image: <code>sana-image-nft</code>; Video: <code>sana-video-nft</code></li>
+</ul>
+<p>See the <a href="https://nvidia-cosmos.github.io/cosmos-rl/quickstart/configuration.html">Configuration Page</a> for argument details.</p>
+<p><strong>Reward service</strong>: Use a separate async reward service; see <a href="https://github.com/nvidia-cosmos/cosmos-rl/tree/main/reward_service/README.md">reward_service/README.md</a>. Set <code>REMOTE_REWARD_TOKEN</code>, <code>REMOTE_REWARD_ENQUEUE_URL</code>, and <code>REMOTE_REWARD_FETCH_URL</code> for the trainer.</p>
+<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h2>
+<p><strong>SFT</strong> (example with image LoRA):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cosmos-rl<span class="w"> </span>--config<span class="w"> </span>./configs/sana/sana-image-sft-lora.toml<span class="w"> </span>cosmos_rl.tools.dataset.diffusers_dataset
+</code></pre></div>
+<p><strong>RL</strong> (image NFT):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cosmos-rl<span class="w"> </span>--config<span class="w"> </span>./configs/sana/sana-image-nft.toml<span class="w"> </span>cosmos_rl.tools.dataset.diffusion_nft
+</code></pre></div>
+<p>Datasets: SFT uses local dirs with <code>*.json</code> + <code>*.jpg</code> / <code>*.mp4</code>. RL supports image datasets (e.g. pickscore, ocr, geneval) and video (e.g. filtered VidProM). You can customize via <a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/cosmos_rl/tools/dataset/diffusion_nft.py"><code>cosmos_rl/tools/dataset/diffusion_nft.py</code></a> and the <a href="https://nvidia-cosmos.github.io/cosmos-rl/quickstart/customization.html">Customization</a> guide.</p>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/examples/sana.md">SANA on Cosmos-RL (examples/sana.md)</a></li>
+<li><a href="https://nvidia-cosmos.github.io/cosmos-rl/">Cosmos-RL docs</a></li>
+<li><a href="https://github.com/nvidia-cosmos/cosmos-rl">Cosmos-RL GitHub</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1223,12 +1464,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/Sana/docs/", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "/Sana/docs/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/Sana/docs/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/Sana/docs/stylesheets/extra.js"></script>
+        <script src="../stylesheets/extra.js"></script>
       
     
   </body>
