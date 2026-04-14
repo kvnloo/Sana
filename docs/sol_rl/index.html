@@ -12,13 +12,13 @@
         <meta name="author" content="Sana Team">
       
       
-        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sana_cosmos_rl/">
+        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sol_rl/">
       
       
-        <link rel="prev" href="../longsana/">
+        <link rel="prev" href="../sana_cosmos_rl/">
       
       
-        <link rel="next" href="../sol_rl/">
+        <link rel="next" href="../sana_controlnet/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Cosmos-RL - Sana Documentation</title>
+        <title>Sol-RL - Sana Documentation</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models" class="md-skip">
+        <a href="#sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cosmos-RL
+              Sol-RL
             
           </span>
         </div>
@@ -839,6 +839,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../sana_cosmos_rl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cosmos-RL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -858,7 +886,7 @@
   <span class="md-ellipsis">
     
   
-    Cosmos-RL
+    Sol-RL
   
 
     
@@ -876,7 +904,7 @@
   <span class="md-ellipsis">
     
   
-    Cosmos-RL
+    Sol-RL
   
 
     
@@ -902,10 +930,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#how-to-train" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        How to Train
       
     </span>
   </a>
@@ -913,10 +941,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#supported-algorithms-features" class="md-nav__link">
+  <a href="#configuration-families" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Supported Algorithms &amp; Features
+        Configuration Families
       
     </span>
   </a>
@@ -924,32 +952,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#reward-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration
+        Reward Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reward Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-reward-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Reward Checkpoints
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#training" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#auto-downloaded-reward-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Training
+        Auto-Downloaded Reward Models
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
+  <a href="#acknowledgements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Links
+        Acknowledgements
       
     </span>
   </a>
@@ -960,34 +1005,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sol_rl/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Sol-RL
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1366,10 +1383,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#how-to-train" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        How to Train
       
     </span>
   </a>
@@ -1377,10 +1394,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#supported-algorithms-features" class="md-nav__link">
+  <a href="#configuration-families" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Supported Algorithms &amp; Features
+        Configuration Families
       
     </span>
   </a>
@@ -1388,32 +1405,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#reward-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration
+        Reward Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reward Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-reward-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Reward Checkpoints
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#training" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#auto-downloaded-reward-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Training
+        Auto-Downloaded Reward Models
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
+  <a href="#acknowledgements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Links
+        Acknowledgements
       
     </span>
   </a>
@@ -1441,49 +1475,130 @@
 
 
 <p align="center" style="border-radius: 10px">
-  <img src="https://nvlabs.github.io/Sana/assets/cosmos-rl/sana-cosmos-rl-logo.png" width="90%" alt="SANA × Cosmos-RL Logo"/>
+  <img src="https://nvlabs.github.io/Sana/Sol-RL/asset/sol-rl_logo.png" width="82%" alt="Sol-RL Logo"/>
 </p>
 
-<h1 id="sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models">SANA × Cosmos-RL: Post-Training (SFT/RL) for Image &amp; Video Diffusion Models<a class="headerlink" href="#sana-cosmos-rl-post-training-sftrl-for-image-video-diffusion-models" title="Permanent link">&para;</a></h1>
+<h1 id="sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l">Sol-RL: FP4 Explore, BF16 Train for SANA, FLUX.1, and SD3.5-L<a class="headerlink" href="#sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l" title="Permanent link">&para;</a></h1>
 <div align="center">
-  <a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/examples/sana.md"><img src="https://img.shields.io/static/v1?label=SANA&message=Cosmos-RL%20README&color=blue&logo=github" alt="SANA on Cosmos-RL"></a>
-  &nbsp; <a href="https://github.com/nvidia-cosmos/cosmos-rl"><img src="https://img.shields.io/static/v1?label=Cosmos-RL&message=Github&color=black&logo=github" alt="Cosmos-RL"></a>
+  <a href="https://nvlabs.github.io/Sana/Sol-RL/"><img src="https://img.shields.io/static/v1?label=Project&message=Homepage&color=blue&logo=github-pages" alt="Sol-RL Homepage"></a> &ensp;
+  <a href="https://arxiv.org/abs/2604.06916"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Sol-RL&color=red&logo=arxiv" alt="Sol-RL Arxiv"></a>
 </div>
 
-<p>We have partnered with <a href="https://github.com/nvidia-cosmos/cosmos-rl">Cosmos-RL</a> to provide a complete RL infrastructure for SANA. This document summarizes how to post-train (SFT/RL) SANA-Image or SANA-Video on Cosmos-RL.</p>
-<p align="center" style="border-radius: 10px">
-  <img src="https://nvlabs.github.io/Sana/assets/cosmos-rl/teaser.png" width="90%" alt="SANA × Cosmos-RL Teaser"/>
-</p>
-
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>SANA</strong> is an efficiency-oriented codebase for high-resolution image and video generation. <strong>Cosmos-RL</strong> is NVIDIA's flexible and scalable reinforcement learning framework. Together they support:</p>
-<ul>
-<li><strong>SFT</strong> (Supervised Fine-Tuning): full and LoRA for image and video</li>
-<li><strong>RL</strong> (e.g. DiffusionNFT &amp; Flow-GRPO): image and video with async reward service and configurable datasets</li>
-</ul>
-<h2 id="supported-algorithms-features">Supported Algorithms &amp; Features<a class="headerlink" href="#supported-algorithms-features" title="Permanent link">&para;</a></h2>
-<p>Cosmos-RL supports state-of-the-art algorithms including <strong>GRPO</strong>, <strong>DAPO</strong> for LLMs, and for diffusion/world models <strong>FlowGRPO</strong>, <strong>DDRL</strong>, and <strong>DiffusionNFT</strong>. SANA is natively supported. For full details see the <a href="https://nvidia-cosmos.github.io/cosmos-rl/">Cosmos-RL documentation</a> and the <a href="https://nvidia-cosmos.github.io/cosmos-rl/wfm/overview.html">post-training of diffusion models</a> overview.</p>
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<p><strong>Configs</strong>: SANA configs live in <a href="https://github.com/nvidia-cosmos/cosmos-rl/tree/main/configs/sana"><code>configs/sana</code></a>. Presets include:</p>
-<ul>
-<li><strong>SFT</strong> — Image: <code>sana-image-sft</code>, <code>sana-image-sft-lora</code>; Video: <code>sana-video-sft</code>, <code>sana-video-sft-lora</code></li>
-<li><strong>RL</strong> — Image: <code>sana-image-nft</code>; Video: <code>sana-video-nft</code></li>
-</ul>
-<p>See the <a href="https://nvidia-cosmos.github.io/cosmos-rl/quickstart/configuration.html">Configuration Page</a> for argument details.</p>
-<p><strong>Reward service</strong>: Use a separate async reward service; see <a href="https://github.com/nvidia-cosmos/cosmos-rl/tree/main/reward_service/README.md">reward_service/README.md</a>. Set <code>REMOTE_REWARD_TOKEN</code>, <code>REMOTE_REWARD_ENQUEUE_URL</code>, and <code>REMOTE_REWARD_FETCH_URL</code> for the trainer.</p>
-<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h2>
-<p><strong>SFT</strong> (example with image LoRA):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cosmos-rl<span class="w"> </span>--config<span class="w"> </span>./configs/sana/sana-image-sft-lora.toml<span class="w"> </span>cosmos_rl.tools.dataset.diffusers_dataset
+<p>This guide covers Sol-RL post-training in <code>Sana</code>, including single-node launchers, config families, reward setup, and model-specific notes for <strong>SANA</strong>, <strong>FLUX.1</strong>, and <strong>SD3.5-L</strong>.</p>
+<p>Base installation is shared with the rest of the repo and is documented in <a href="../installation/">Installation</a>.</p>
+<p>If you want the NVFP4 path (<code>*_naive_quant_*</code> or <code>*_sol_rl_*</code>), also install <code>transformer-engine</code> with the same Python interpreter used by <code>torchrun</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span><span class="s2">&quot;transformer-engine[pytorch]&quot;</span>
 </code></pre></div>
-<p><strong>RL</strong> (image NFT):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cosmos-rl<span class="w"> </span>--config<span class="w"> </span>./configs/sana/sana-image-nft.toml<span class="w"> </span>cosmos_rl.tools.dataset.diffusion_nft
+<h2 id="how-to-train">How to Train<a class="headerlink" href="#how-to-train" title="Permanent link">&para;</a></h2>
+<p>Default single-node launchers:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sana_single_node_8gpu.sh
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sd3_single_node_8gpu.sh
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_flux1_single_node_8gpu.sh
 </code></pre></div>
-<p>Datasets: SFT uses local dirs with <code>*.json</code> + <code>*.jpg</code> / <code>*.mp4</code>. RL supports image datasets (e.g. pickscore, ocr, geneval) and video (e.g. filtered VidProM). You can customize via <a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/cosmos_rl/tools/dataset/diffusion_nft.py"><code>cosmos_rl/tools/dataset/diffusion_nft.py</code></a> and the <a href="https://nvidia-cosmos.github.io/cosmos-rl/quickstart/customization.html">Customization</a> guide.</p>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/sana.py:sana_diffusionnft_pickscore<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sana_single_node_8gpu.sh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/sd3.py:sd3_compile_hpsv2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sd3_single_node_8gpu.sh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/flux1.py:flux1_sol_rl_imagereward<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_flux1_single_node_8gpu.sh
+</code></pre></div>
+<h2 id="configuration-families">Configuration Families<a class="headerlink" href="#configuration-families" title="Permanent link">&para;</a></h2>
+<p>Config naming pattern:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;model&gt;_&lt;family&gt;_&lt;reward&gt;
+</code></pre></div>
+<p>Examples:</p>
 <ul>
-<li><a href="https://github.com/nvidia-cosmos/cosmos-rl/blob/main/examples/sana.md">SANA on Cosmos-RL (examples/sana.md)</a></li>
-<li><a href="https://nvidia-cosmos.github.io/cosmos-rl/">Cosmos-RL docs</a></li>
-<li><a href="https://github.com/nvidia-cosmos/cosmos-rl">Cosmos-RL GitHub</a></li>
+<li><code>sana_diffusionnft_pickscore</code></li>
+<li><code>sd3_compile_hpsv2</code></li>
+<li><code>flux1_sol_rl_imagereward</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Meaning</th>
+<th>Rollout shape</th>
+<th>TE / NVFP4 needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>diffusionnft</code></td>
+<td>PEFT-only baseline</td>
+<td>24-in-24</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>naive_scaling</code></td>
+<td>PEFT brute-force scaling</td>
+<td>24-in-96</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>compile</code></td>
+<td>BF16 compiled brute-force scaling</td>
+<td>24-in-96</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>naive_quant</code></td>
+<td>Direct NVFP4 compiled rollout</td>
+<td>24-in-96</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>sol_rl</code></td>
+<td>Two-stage decoupled rollout</td>
+<td>24-in-96</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>In this repository:</p>
+<ul>
+<li><code>diffusionnft</code>: <code>preview_model="peft"</code>, <code>fullrollout_model="peft"</code></li>
+<li><code>naive_scaling</code>: <code>preview_model="peft"</code>, <code>fullrollout_model="peft"</code></li>
+<li><code>compile</code>: <code>fullrollout_model="compile"</code></li>
+<li><code>naive_quant</code>: <code>fullrollout_model="compile_nvfp4"</code></li>
+<li><code>sol_rl</code>: <code>preview_step=6</code>, <code>preview_model="compile_nvfp4"</code>, <code>fullrollout_model="compile"</code></li>
+</ul>
+<p>Recommended first runs:</p>
+<ul>
+<li><code>sana_diffusionnft_pickscore</code></li>
+<li><code>sd3_diffusionnft_pickscore</code></li>
+<li><code>flux1_diffusionnft_pickscore</code></li>
+</ul>
+<h2 id="reward-models">Reward Models<a class="headerlink" href="#reward-models" title="Permanent link">&para;</a></h2>
+<p>Current online reward suffixes:</p>
+<ul>
+<li><code>pickscore</code></li>
+<li><code>clipscore</code></li>
+<li><code>hpsv2</code></li>
+<li><code>imagereward</code></li>
+</ul>
+<h3 id="manual-reward-checkpoints">Manual Reward Checkpoints<a class="headerlink" href="#manual-reward-checkpoints" title="Permanent link">&para;</a></h3>
+<p><code>HPSv2</code> expects local files under <code>reward_ckpts/</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>reward_ckpts
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>reward_ckpts
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>wget<span class="w"> </span>https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/open_clip_pytorch_model.bin
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>wget<span class="w"> </span>https://huggingface.co/xswu/HPSv2/resolve/main/HPS_v2.1_compressed.pt
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+<h3 id="auto-downloaded-reward-models">Auto-Downloaded Reward Models<a class="headerlink" href="#auto-downloaded-reward-models" title="Permanent link">&para;</a></h3>
+<p>The other reward models are downloaded automatically on first use:</p>
+<ul>
+<li><code>clipscore</code>: <code>openai/clip-vit-large-patch14</code></li>
+<li><code>pickscore</code>: <code>laion/CLIP-ViT-H-14-laion2B-s32B-b79K</code> and <code>yuvalkirstain/PickScore_v1</code></li>
+<li><code>imagereward</code>: <code>ImageReward-v1.0</code></li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sol-RL training recipes in this repo draw on <a href="https://github.com/scxue/advantage_weighted_matching">Advantage Weighted Matching</a> and <a href="https://github.com/NVlabs/DiffusionNFT">DiffusionNFT</a>.</li>
 </ul>
 
 
